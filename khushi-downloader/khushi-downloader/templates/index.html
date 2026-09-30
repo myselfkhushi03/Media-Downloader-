@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushi Downloader - All in One</title>
+<link rel="stylesheet" href="/static/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>💖 <b>KHUSHI</b> DOWNLOADER</nav>
+
+<section class="hero">
+<h1>Download Anything <br><span>from Anywhere</span></h1>
+<p>Paste YouTube, Instagram, Facebook link and get Video + MP3 in HD</p>
+
+<div class="search-box">
+<input id="url" placeholder="Paste link here... https://...">
+<button onclick="fetchInfo()">Download <span>➜</span></button>
+</div>
+
+<div class="platforms">✅ YouTube &nbsp; ✅ Instagram Reels &nbsp; ✅ Facebook &nbsp; ✅ Twitter</div>
+</section>
+
+<section id="resultSection" class="result hidden">
+<div class="result-card">
+<img id="thumb">
+<div class="info">
+<h3 id="title"></h3>
+<div class="meta"><span id="platform"></span> • <span id="duration"></span></div>
+
+<div class="tabs">
+<button class="tab active" onclick="switchTab('video')">🎬 Video</button>
+<button class="tab" onclick="switchTab('audio')">🎵 MP3</button>
+</div>
+
+<div id="videoList"></div>
+<div id="audioList" class="hidden"></div>
+</div>
+</div>
+</section>
+
+<div id="loader" class="loader hidden">Loading... Please wait 💖</div>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
